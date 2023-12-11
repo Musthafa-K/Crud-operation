@@ -112,14 +112,6 @@ public class UserServiceImpl implements UserService {
         return users.stream().map((user) -> convertEntityToDto(user))
                 .collect(Collectors.toList());
     }
-  @Override
-  public  User updatefirstName(UserDto user){
-        int id= user.getId();
-        User existing=userRepository.findById(id);
-        existing.setFirstName(" ");
-        return existing;
-
-  }
 
 
     private UserDto convertEntityToDto(User user) {
