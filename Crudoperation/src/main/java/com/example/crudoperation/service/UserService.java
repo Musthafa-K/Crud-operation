@@ -19,7 +19,7 @@ public interface UserService {
 
     User updateUser(UserDto user);
 
-    User updatefirstName(UserDto user);
+    
 
     User deleteUserById(int id);
     List<UserDto> searchUser(String role,String name);
