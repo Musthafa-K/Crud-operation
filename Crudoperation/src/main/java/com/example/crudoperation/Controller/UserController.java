@@ -108,16 +108,7 @@ public class UserController {
         return "dashboard";
     }
 
-    @GetMapping("/dashboard/deleteFirstname/{id}")
-    public String deleteFirstName(@PathVariable int id){
-
-         UserDto user=new UserDto();
-         user.setId(id);
-         userService.updatefirstName(user);
-         return "redirect:/dashboard";
-
-
-    }
+    
 
 
 
